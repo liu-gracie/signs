@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Geometric City Sign Builder</title>
+
+    <!-- Link CSS -->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <div class="page">
+      <div class="container app-layout">
+        <!-- Left toggle button -->
+        <button
+          class="panel-toggle"
+          id="panelToggle"
+          aria-label="Toggle sign controls"
+          aria-expanded="false"
+          aria-controls="sidePanel"
+        >
+          ADD A SIGN!
+        </button>
+
+        <!-- Left slide-out / popup panel -->
+        <br></br>
+        <aside class="side-panel" id="sidePanel" aria-hidden="true">
+          <div class="panel-content">
+            <h2>Add A Sign</h2>
+            <p class="subtitle">
+              This city needs more blue! What kind of signs do you want to add to the city? 
+            </p>
+
+            <div class="controls">
+              <div class="controls-top">
+                <div class="field">
+                  <label for="signText">Sign text</label>
+                  <input
+                    id="signText"
+                    type="text"
+                    maxlength="10"
+                    placeholder="HELLO"
+                    value="HELLO"
+                  />
+                </div>
+
+                <button class="button" id="addSignButton">
+                  ADD
+                </button>
+              </div>
+
+              <div class="swatches" id="swatches"></div>
+              <div class="counter">
+                <span id="charCount">5</span>/10 characters
+              </div>
+            </div>
+          </div>
+        </aside>
+
+        <!-- Optional overlay behind panel -->
+        <div class="panel-overlay" id="panelOverlay"></div>
+
+        <!-- Main city scene -->
+        <section class="city-frame">
+          <div class="shape one"></div>
+          <div class="shape two"></div>
+          <div class="cloud"></div>
+
+          <div class="park"></div>
+          <div class="grass-back"></div>
+          <div class="road"></div>
+
+          <!-- buildings -->
+          <div class="building" style="left: 6%; width: 9%; height: 30%; background: #f5b971;"></div>
+          <div class="building" style="left: 17%; width: 11%; height: 42%; background: #f28482;"></div>
+          <div class="building" style="left: 31%; width: 8%; height: 24%; background: #84a59d;"></div>
+          <div class="building" style="left: 42%; width: 14%; height: 48%; background: #f6bd60;"></div>
+          <div class="building" style="left: 59%; width: 9%; height: 35%; background: #b8c0ff;"></div>
+          <div class="building" style="left: 71%; width: 12%; height: 28%; background: #a0c4ff;"></div>
+          <div class="building" style="left: 86%; width: 8%; height: 40%; background: #cdb4db;"></div>
+
+          <div class="accent one"></div>
+          <div class="accent two"></div>
+          <div class="accent three"></div>
+
+          <div class="sign-post">
+            <div class="pole"></div>
+            <div class="sign" id="citySign" style="display:none;">HELLO</div>
+          </div>
+
+          <!-- cars -->
+          <div class="car car-one">
+            <div class="body"></div>
+            <div class="top"></div>
+            <div class="wheel left"></div>
+            <div class="wheel right"></div>
+          </div>
+
+          <div class="car car-two">
+            <div class="body"></div>
+            <div class="top"></div>
+            <div class="wheel left"></div>
+            <div class="wheel right"></div>
+          </div>
+
+          <div class="car car-three">
+            <div class="body"></div>
+            <div class="top"></div>
+            <div class="wheel left"></div>
+            <div class="wheel right"></div>
+          </div>
+        </section>
+      </div>
+    </div>
+
+    <!-- Link JS -->
+    <script src="script.js"></script>
+  </body>
+</html>
