@@ -5,7 +5,7 @@
   --muted: #6b7280;
   --road: #262b3a;
   --grass: #d7f0d0;
-  --park: #b9e3b0;
+  --park: #6f8e69;
   --sign-blue: #3b82f6;
   --shadow: rgba(15, 23, 42, 0.08);
 }
@@ -223,8 +223,7 @@ body {
   margin-top: 28px;
   border-radius: 10px;
   overflow: hidden;
-  border: 1px solid #e5e7eb;
-  background: linear-gradient(to top, #ffe9d6 0%, #fff6ec 40%, #fffaf5 100%);
+  background: linear-gradient(to top, #ffffff 0%, #ffffff 40%, #bfbbb8 100%);
 }
 
 .cloud,
@@ -309,21 +308,21 @@ body {
   left: 26%;
   width: 82px;
   height: 68px;
-  background: #ffd166;
+  background: #787672;
 }
 
 .accent.two {
   left: 63%;
   width: 60px;
   height: 60px;
-  background: #ffadad;
+  background: #6f6969;
 }
 
 .accent.three {
   right: 12%;
   width: 44px;
   height: 78px;
-  background: #caffbf;
+  background: #6d746c;
 }
 
 .sign-post {
@@ -388,7 +387,7 @@ body {
   bottom: 10px;
   width: 70px;
   height: 22px;
-  background: #ff6b6b;
+  background: #ca7676;
 }
 
 .car-one .top {
@@ -397,7 +396,7 @@ body {
   bottom: 30px;
   width: 34px;
   height: 16px;
-  background: #ffd6a5;
+  background: #afbac5;
   border-radius: 0px 10px 0 0;
 }
 
@@ -424,7 +423,7 @@ body {
   bottom: 8px;
   width: 50px;
   height: 14px;
-  background: #6ee7b7;
+  background: #7e8582;
 }
 
 .car-two .top {
@@ -433,7 +432,7 @@ body {
   bottom: 20px;
   width: 22px;
   height: 14px;  
-  background: #d9f99d;
+  background: #afbac5;
   border-radius: 10px 0px 0 0;
 }
 
@@ -460,7 +459,7 @@ body {
   bottom: 8px;
   width: 58px;
   height: 18px;
-  background: #a5b4fc;
+  background: #dadbe2;
 }
 
 .car-three .top {
@@ -469,7 +468,7 @@ body {
   bottom: 24px;
   width: 28px;
   height: 12px;
-  background: #e0e7ff;
+  background: #afbac5;
   border-radius: 0px 10px 0 0;
 }
 
