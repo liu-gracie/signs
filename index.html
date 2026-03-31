@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Geometric City Sign Builder</title>
+    <title>SIGNS</title>
 
     <!-- Link CSS -->
     <link rel="stylesheet" href="style.css" />
@@ -29,7 +29,7 @@
           <div class="panel-content">
             <h2>Add A Sign</h2>
             <p class="subtitle">
-              This city needs more blue! What kind of signs do you want to add to the city? 
+              This city needs more blue! What kind of signs do you want to add to the city?
             </p>
 
             <div class="controls">
@@ -51,9 +51,28 @@
               </div>
 
               <div class="swatches" id="swatches"></div>
+
+              <br>
+              
+              <div class="field">
+                <label>Sign shape</label>
+                <div class="shape-options" id="shapeOptions"></div>
+              </div>
+
+              <div class="field">
+                <label>Preview</label>
+                <div id="signPreviewWrap">
+                  <div id="signPreview">HELLO</div>
+                </div>
+              </div>
+
               <div class="counter">
                 <span id="charCount">5</span>/10 characters
               </div>
+
+              <p id="placementHint" style="margin-top: 10px;">
+                Click ADD, then click somewhere in the city to place your sign.
+              </p>
             </div>
           </div>
         </aside>
@@ -62,7 +81,7 @@
         <div class="panel-overlay" id="panelOverlay"></div>
 
         <!-- Main city scene -->
-        <section class="city-frame">
+        <section class="city-frame" id="cityFrame">
           <div class="shape one"></div>
           <div class="shape two"></div>
           <div class="cloud"></div>
@@ -84,10 +103,7 @@
           <div class="accent two"></div>
           <div class="accent three"></div>
 
-          <div class="sign-post">
-            <div class="pole"></div>
-            <div class="sign" id="citySign" style="display:none;">HELLO</div>
-          </div>
+          <!-- Signs will be added here dynamically -->
 
           <!-- cars -->
           <div class="car car-one">
